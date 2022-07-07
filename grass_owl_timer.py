@@ -74,4 +74,9 @@ def save_csv(dir_path):
     print("資料儲存在 ./results/%s" % dir_name + str(index))
 
 if __name__ == "__main__":
-    save_csv(dir_path)
+
+    try:
+        save_csv(dir_path)
+    except Exception as e:
+        print(e)
+        input()
