@@ -15,6 +15,8 @@ dir_path = diropenbox()
 if not dir_path:
     exit()
 
+print("你選擇了%s" % dir_path)
+
 output_name = Path(dir_path).stem
 
 def read_time(dir_path):
